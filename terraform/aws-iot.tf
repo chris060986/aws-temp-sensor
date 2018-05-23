@@ -1,9 +1,11 @@
 provider "aws" {
+  # aws api key added as environment variables
   region = "eu-central-1"
 }
 
 resource "aws_iot_thing" "example" {
   name = "first_test"
+
   attributes {
     First = "temp"
   }
