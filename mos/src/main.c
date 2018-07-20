@@ -162,7 +162,7 @@ static void dht_timer_cb(void *arg) {
 enum mgos_app_init_result mgos_app_init(void) {
   mgos_mqtt_add_global_handler(ev_handler, NULL);
   
-  LOG(LL_INFO, ("%s will be initialized on Pin %d", DHTTYPE, DHTPIN));
+  LOG(LL_INFO, ("%d will be initialized on Pin %d", DHTTYPE, DHTPIN));
   if ((s_dht = mgos_dht_create(DHTPIN, DHTTYPE)) != NULL) {
     LOG(LL_INFO, ("Successfull initalized"));
   }
