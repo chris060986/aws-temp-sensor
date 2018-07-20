@@ -12,3 +12,6 @@
 **/mos/build/*
 **/mos/build/**
 mos/README.md
+
+#amazon certs
+*.pem
