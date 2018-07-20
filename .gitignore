@@ -7,3 +7,8 @@
 
 # .tfvars files
 *.tfvars
+
+#mos build files
+**/mos/build/*
+**/mos/build/**
+mos/README.md
